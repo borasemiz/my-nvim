@@ -1,4 +1,8 @@
-# 💤 LazyVim
+# 💤 My NeoVim Configuration
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+Extending the starter template from [LazyVim](https://github.com/LazyVim/LazyVim).
+
+## Dependencies
+
+You need to have [`ripgrep`](https://github.com/BurntSushi/ripgrep) to be installed in your system.
+
