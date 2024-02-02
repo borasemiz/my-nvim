@@ -1,6 +1,15 @@
 return {
   {
     "nvim-telescope/telescope.nvim",
+    opts = {
+      defaults = {
+        file_ignore_patterns = {
+          "yarn.lock",
+          "node_modules",
+          "package-lock.json",
+        },
+      },
+    },
     lazy = false,
   },
   {
