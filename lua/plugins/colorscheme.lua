@@ -5,6 +5,8 @@ return {
   -- Cofigure LazyVi
   {
     "LazyVim/LazyVim",
-    colorscheme = "gruvbox",
+    opts = {
+      colorscheme = "gruvbox",
+    },
   },
 }
