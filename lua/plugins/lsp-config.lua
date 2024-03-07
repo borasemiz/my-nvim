@@ -52,8 +52,11 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
+      local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({
+        capabilities = capabilities,
         settings = {
           Lua = {
             diagnostics = {
@@ -64,7 +67,12 @@ return {
           },
         },
       })
-      lspconfig.tsserver.setup({})
+      lspconfig.html.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.tsserver.setup({
+        capabilities = capabilities,
+      })
 
       -- Global mappings.
       -- See `:help vim.diagnostic.*` for documentation on any of the below functions
